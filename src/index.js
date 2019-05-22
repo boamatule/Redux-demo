@@ -1,4 +1,3 @@
-// scr/index.js
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'semantic-ui-css/semantic.min.css';
@@ -16,7 +15,8 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 );
+
 serviceWorker.unregister();
 
 
-export default App;
+export default App; 

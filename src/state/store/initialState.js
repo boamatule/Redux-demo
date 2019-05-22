@@ -1,5 +1,5 @@
-// src/state/store/initialState.js
 const initialState = {
-    greeting: 'Hello World from Redux'
+    greeting: 'Hello World from Redux',
+    proposed_greeting: ''
   }
   export default initialState
