@@ -9,16 +9,17 @@ const App = (props) => {
       <Container>
         <Header as='h1'>{props.state.greeting}</Header>
         <Input
-          placeholder='New greeting...'
-          onBlur={(event) => props.dispactch({type: 'PORPOSE_GREETING',
+          placeholder='New greeting'
+          onBlur={(event) => props.dispatch({ type: 'PROPOSE_GREETING',
         greeting: event.target.value })}
         />
 
         <Button
           primary
-          onClick={() => props.dispactch({ type: 'CHANGE_GREETING',
+          onClick={() => props.dispatch({ type: 'CHANGE_GREETING',
           greeting: 'Hello Venus' })}
         >
+          Change greeting
         </Button>
       </Container>
     </>
