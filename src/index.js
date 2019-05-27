@@ -9,15 +9,14 @@ import { verifyCredentials } from './redux-token-auth-config' // <-- note this i
 
 
 const store = configureStore();
+verifyCredentials(store)
 window.store = store
-
 ReactDOM.render(
   <Provider store={store}>
       <App />
   </Provider>,
   document.getElementById('root')
 );
-
 serviceWorker.unregister();
 
 
