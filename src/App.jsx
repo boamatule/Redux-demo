@@ -10,7 +10,8 @@ class App extends Component {
     super(props)
 
     this.state = {
-
+      email: '',
+      password: ''
     };
   };
 
@@ -19,7 +20,7 @@ class App extends Component {
   }
 
   submitForm() {
-    
+
   }
 
   render() {
@@ -43,9 +44,9 @@ class App extends Component {
       </Container>
       
       <>
-        <imput id='email' onChange={this.imputHandler.bind(this)}></imput>
-        <imput id='password' onChange={this.imputHandler.bind(this)}></imput>
-        <button onClick={this.submitForm}></button>
+        <input id='email' placeholder='email' onChange={this.inputHandler.bind(this)}></input>
+        <input id='password' placeholder='password' onChange={this.inputHandler.bind(this)}></input>
+        <button onClick={this.submitForm}>Login</button>
       </>
     </>
     )
